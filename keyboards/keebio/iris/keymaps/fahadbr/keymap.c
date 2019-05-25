@@ -10,7 +10,7 @@ extern keymap_config_t keymap_config;
 
 // left side
 #define KC_ENT_CTL CTL_T(KC_ENT)
-#define KC_BSPC_ALT ALT_T(KC_BSPC)
+#define KC_MINS_ALT ALT_T(KC_MINS)
 #define KC_BSLS_GUI GUI_T(KC_BSLS)
 #define KC_INS_LWR LT(_LOWER, KC_INS)
 #define KC_ESC_NUM LT(_NUMPAD, KC_ESC)
@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
       LSFT,    Z,       X,       C,       V,       B,      INS_LWR,          PSCR_CTL, N,       M,       COMM,    DOT,     SLSH,    RSFT,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    BSLS_GUI,BSPC_ALT,ENT_CTL,                   SPC_LWR, MINS_NUM,EQL_ALT
+                                    BSLS_GUI,MINS_ALT,ENT_CTL,                   SPC_LWR, MINS_NUM,EQL_ALT
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
