@@ -9,12 +9,14 @@ extern keymap_config_t keymap_config;
 
 
 // left side
-#define KC_ENT_CTL CTL_T(KC_ENT)
-#define KC_MINS_ALT ALT_T(KC_MINS)
-#define KC_BSLS_GUI GUI_T(KC_BSLS)
-#define KC_INS_LWR LT(_LOWER, KC_INS)
-#define KC_ESC_NUM LT(_NUMPAD, KC_ESC)
-#define KC_F7_RSE LT(_RAISE, KC_F7)
+#define KC_ENT_ALT ALT_T(KC_ENT)
+#define KC_MINS_GUI GUI_T(KC_MINS)
+#define KC_BSLS_NUM LT(_NUMPAD, KC_BSLS)
+// #define KC_INS_LWR LT(_LOWER, KC_INS)
+// #define KC_ESC_NUM LT(_NUMPAD, KC_ESC)
+#define KC_ESC_CTL CTL_T(KC_ESC)
+#define KC_CAPS_RSE LT(_RAISE, KC_CAPS)
+#define KC_INS_GUI GUI_T(KC_INS)
 
 // right side
 #define KC_EQL_ALT ALT_T(KC_EQL)
@@ -22,7 +24,7 @@ extern keymap_config_t keymap_config;
 #define KC_SPC_LWR LT(_LOWER, KC_SPC)
 #define KC_MINS_NUM LT(_NUMPAD, KC_MINS)
 #define KC_F12_GUI GUI_T(KC_F12)
-#define KC_BSPC_GUI GUI_T(KC_BSPC)
+#define KC_QUOT_GUI GUI_T(KC_QUOT)
 
 #define KC_QUOT_CAP TD(CAPS)
 
@@ -45,15 +47,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT_kc(
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-     F7_RSE,   1,       2,       3,       4,       5,                                  6,       7,       8,       9,       0,       DEL,
+     CAPS_RSE, 1,       2,       3,       4,       5,                                  6,       7,       8,       9,       0,       DEL,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-      TAB,     Q,       W,       E,       R,       T,                                  Y,       U,       I,       O,       P,      BSPC_GUI,
+      TAB,     Q,       W,       E,       R,       T,                                  Y,       U,       I,       O,       P,       BSPC,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     ESC_NUM,  A,       S,       D,       F,       G,                                  H,       J,       K,       L,       SCLN,   QUOT_CAP,
+     ESC_CTL,  A,       S,       D,       F,       G,                                  H,       J,       K,       L,       SCLN,   QUOT_GUI,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-      LSFT,    Z,       X,       C,       V,       B,      INS_LWR,          PSCR_CTL, N,       M,       COMM,    DOT,     SLSH,    RSFT,
+      LSFT,    Z,       X,       C,       V,       B,      INS_GUI,          PSCR_CTL, N,       M,       COMM,    DOT,     SLSH,    RSFT,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    BSLS_GUI,MINS_ALT,ENT_CTL,                   SPC_LWR, MINS_NUM,EQL_ALT
+                                    BSLS_NUM,MINS_GUI,ENT_ALT,                   SPC_LWR, MINS_NUM,EQL_ALT
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
