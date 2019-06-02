@@ -27,13 +27,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  //#define MASTER_RIGHT
 #define EE_HANDS
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 150
 // this is kind of a hack. there is no way to override the 'TAPPING_TERM'
 // for tap dancing so its only used for tap dancing. 'TAPPING_TERM_CUSTOM' is used
 // as the default tapping term for layer and modifier dual function keys
 // as defined in the 'get_tapping_term' func
 #define TAPPING_TERM_CUSTOM 150
 #define TAPPING_TERM_PER_KEY
+#define PERMISSIVE_HOLD
+#define IGNORE_MOD_TAP_INTERRUPT
+// #define TAPPING_FORCE_HOLD
+// #define RETRO_TAPPING
 
 //some mouse keys tweaking, as it is generally too slow by default
 #define MOUSEKEY_INTERVAL 20
