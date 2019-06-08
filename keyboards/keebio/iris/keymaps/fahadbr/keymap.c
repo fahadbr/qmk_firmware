@@ -15,10 +15,12 @@ extern keymap_config_t keymap_config;
 #define M4 CTL_T
 
 // left side
-#define KC_LTH4 GUI_T(KC_ENT)
+#define KC_LTH4 TG(_MOUSE)
 #define KC_LTH1 LT(_LOWER, KC_ENT)
 #define KC_LTH2 LT(_NUMPAD, KC_MINS)
-#define KC_LTH3 LT(_MOUSE, KC_BSLS)
+// #define KC_LTH1 LT(_LOWER, KC_MINS)
+// #define KC_LTH2 LT(_NUMPAD, KC_ENT)
+#define KC_LTH3 CTL_T(KC_BSLS)
 #define KC_A_M1 M1(KC_A)
 #define KC_S_M2 M2(KC_S)
 #define KC_D_M3 M3(KC_D)
@@ -31,10 +33,12 @@ extern keymap_config_t keymap_config;
 #define KC_CAPS_X LT(_RAISE, KC_CAPS)
 
 // right side
-#define KC_RTH4 CTL_T(KC_SPC)
+#define KC_RTH4 LM(_NUMPAD, MOD_LGUI)
 #define KC_RTH1 LT(_LOWER, KC_SPC)
-#define KC_RTH2 LT(_NUMPAD, KC_GRV)
-#define KC_RTH3 LT(_MOUSE, KC_EQL)
+#define KC_RTH2 LT(_NUMPAD, KC_SPC)
+// #define KC_RTH1 LT(_LOWER, KC_GRV)
+// #define KC_RTH2 LT(_NUMPAD, KC_SPC)
+#define KC_RTH3 GUI_T(KC_EQL)
 #define KC_J_M4 M4(KC_J)
 #define KC_K_M3 M3(KC_K)
 #define KC_L_M2 M2(KC_L)
@@ -87,11 +91,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
       INS,     EXLM,    AT,      HASH,    DLR,     PERC,                               CIRC,    AMPR,    ASTR,    LPRN,    RPRN,    F12,
   //├────────┼────────┼────────┼────────┼────────┤────────┼                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, _______, _______, LBRC_M3, RBRC_M4,  GRV,                                LEFT,   DOWN_M4,  UP_M3,  RGHT_M2, PLUS_M1,  _______,
+     _______, _______, _______, LBRC_M3, RBRC_M4,  GRV,                                LEFT,   DOWN_M4,  UP_M3,  RGHT_M2, _______, _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-      PSCR,   _______, _______, _______,  UNDS,    TILD,   _______,          _______,  HOME,    PGDN,    PGUP,    END,    _______, _______,
+      PSCR,   _______, _______,  LCBR,    RCBR,    TILD,   _______,          _______,  HOME,    PGDN,    PGUP,    END,    _______, _______,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    _______, _______, _______,                   _______, _______,  _______
+                                     PIPE,    UNDS,   _______,                   _______,  TILD,    PLUS
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
