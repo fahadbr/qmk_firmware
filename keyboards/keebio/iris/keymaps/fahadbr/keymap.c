@@ -34,7 +34,7 @@ extern keymap_config_t keymap_config;
 #define KC_RCBR_M2 M2(KC_RCBR)
 #define KC_LBRC_M3 M3(KC_LBRC)
 #define KC_RBRC_M4 M4(KC_RBRC)
-#define KC_ESC_X SFT_T(KC_ESC)
+#define KC_ESC_X GUI_T(KC_ESC)
 #define KC_CAPS_X LT(_RAISE, KC_CAPS)
 
 // right side
@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┤────────┼                          ├────────┼────────┼────────┼────────┼────────┼────────┤
       BSPC,   _______, _______, LBRC_M3, RBRC_M4,  GRV,                                LEFT,   DOWN_M4,  UP_M3,  RGHT_M2,  PIPE,    F12,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-      PSCR,   _______, _______,  LCBR,    RCBR,    TILD,   _______,          _______,  HOME,    PGDN,    PGUP,    END,     BSLS,   _______,
+      PSCR,   LBRC,     RBRC,    LCBR,    RCBR,    TILD,   _______,          _______,  HOME,    PGDN,    PGUP,    END,     BSLS,   _______,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                      PIPE,    UNDS,   _______,                    DEL,     TILD,    PLUS
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
