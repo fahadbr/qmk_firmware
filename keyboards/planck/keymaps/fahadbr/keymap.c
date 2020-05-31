@@ -30,10 +30,9 @@
 #define M4 CTL_T
 
 // left side
-#define KC_LTH4 TG(_MOUSE)
-#define KC_LTH1 LT(_LOWER, KC_ENT)
-#define KC_LTH2 LT(_NUMPAD, KC_MINS)
-#define KC_LTH3 CTL_T(KC_SPC)
+#define KC_TMOUSE TG(_MOUSE)
+#define KC_LTH1 LT(_LOWER, KC_MINS)
+#define KC_LTH2 CTL_T(KC_MINS)
 #define KC_A_M1 M1(KC_A)
 #define KC_S_M2 M2(KC_S)
 #define KC_D_M3 M3(KC_D)
@@ -50,10 +49,12 @@
 #define KC_CAPS_X LT(_RAISE, KC_CAPS)
 
 // right side
-#define KC_RTH4 LM(_NUMPAD, MOD_LGUI)
-#define KC_RTH1 LT(_LOWER, KC_BSPC)
-#define KC_RTH2 LT(_NUMPAD, KC_SPC)
-#define KC_RTH3 GUI_T(KC_EQL)
+#define KC_NGUI LM(_NUMPAD, MOD_LGUI)
+#define KC_RTH1 LT(_LOWER, KC_EQL)
+#define KC_G_LEFT GUI_T(KC_LEFT)
+#define KC_C_DWN CTL_T(KC_DOWN)
+#define KC_A_UP ALT_T(KC_UP)
+#define KC_M_RGHT LT(_MOUSE, KC_RGHT)
 #define KC_J_M4 M4(KC_J)
 #define KC_K_M3 M3(KC_K)
 #define KC_L_M2 M2(KC_L)
@@ -63,6 +64,9 @@
 #define KC_RGHT_M2 M2(KC_RGHT)
 #define KC_PLUS_M1 M1(KC_PLUS)
 #define KC_QUOT_X SFT_T(KC_QUOT)
+#define KC_F4_M4 M4(KC_F4)
+#define KC_F5_M3 M3(KC_F5)
+#define KC_F6_M2 M2(KC_F6)
 
 #define KC_SPC_X LT(_NUMPAD, KC_SPC)
 
@@ -102,8 +106,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = LAYOUT_kc(
     TAB,     Q,       W,       E,       R,       T,       Y,       U,       I,       O,       P,       BSPC,
     ESC_X,   A_M1,    S_M2,    D_M3,    F_M4,    G,       H,       J_M4,    K_M3,    L_M2,    SCLN_M1, QUOT_X,
-    LSFT,    Z,       X,       C,       V,       B,       N,       M,       COMM,    DOT,     SLSH,    SFTENT ,
-    CAPS_X,  LCTL,    LTH3,    LTH2,    LTH1,    SPC_X,   SPC_X,   RTH1,    RTH2,    RTH3,    UP,      RGHT
+    LSFT,    Z,       X,       C,       V,       B,       N,       M,       COMM,    DOT,     SLSH,    SFTENT,
+    CAPS_X,  TMOUSE,  NGUI,    LTH2,    LTH1,    SPC_X,   SPC_X,   RTH1,    G_LEFT,  C_DWN,   A_UP,    M_RGHT
 ),
 
 [_LOWER] = LAYOUT_kc(
@@ -122,7 +126,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_NUMPAD] = LAYOUT_kc(
     _______, _______, 7,       8,       9,       _______, _______, F1,      F2,      F3,      _______, _______,
-    _______, 0_M1,    4_M2,    5_M3,    6_M4,    _______, _______, F4,      F5,      F6,      _______, _______,
+    _______, 0_M1,    4_M2,    5_M3,    6_M4,    _______, _______, F4_M4,   F5_M3,   F6_M2,   _______, _______,
     _______, _______, 1,       2,       3,       _______, _______, F5,      F8,      F9,      _______, _______,
     _______, _______, _______, 0,       _______, SPC_X,   SPC_X,   F10,     F11,     F12,     _______, _______
 ),
