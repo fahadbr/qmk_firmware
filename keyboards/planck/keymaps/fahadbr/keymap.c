@@ -114,7 +114,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     INS,     EXLM,    AT,      HASH,    DLR,     PERC,    CIRC,    AMPR,    ASTR,    LPRN,    RPRN,    DEL,
     BSPC,    _______, _______, LBRC_M3, RBRC_M4, GRV,     LEFT,    DOWN_M4, UP_M3,   RGHT_M2, PIPE,    F12,
     PSCR,    LBRC,    RBRC,    LCBR,    RCBR,    TILD,    HOME,    PGDN,    PGUP,    END,     BSLS,    _______,
-    _______, _______, _______, _______, _______, SPC_X,   SPC_X,   DEL,     TILD,    PLUS,    _______, _______
+    _______, _______, _______, _______, _______, SPC_X,   SPC_X,   PLUS,    TILD,    _______, _______, _______
 ),
 
 [_RAISE] = LAYOUT_planck_grid(
