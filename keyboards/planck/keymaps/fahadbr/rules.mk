@@ -1,1 +1,1 @@
-#SRC += muse.c
+SRC += muse.c
