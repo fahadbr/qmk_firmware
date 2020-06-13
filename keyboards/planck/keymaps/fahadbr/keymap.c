@@ -32,8 +32,9 @@
 // left side
 #define KC_TMOUSE TG(_MOUSE)
 #define KC_LTH1 LT(_NUMPAD, KC_MINS)
-#define KC_LTH2 CTL_T(KC_MINS)
+#define KC_LTH2 CTL_T(KC_SPC)
 #define KC_L_ENT LT(_LOWER, KC_ENT)
+#define KC_L_BSPC LT(_LOWER, KC_BSPC)
 #define KC_A_M1 M1(KC_A)
 #define KC_S_M2 M2(KC_S)
 #define KC_D_M3 M3(KC_D)
@@ -108,7 +109,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TAB,     Q,       W,       E,       R,       T,       Y,       U,       I,       O,       P,       BSPC,
     ESC_X,   A_M1,    S_M2,    D_M3,    F_M4,    G,       H,       J_M4,    K_M3,    L_M2,    SCLN_M1, QUOT_X,
     LSFT,    Z,       X,       C,       V,       B,       N,       M,       COMM,    DOT,     SLSH,    SFTENT,
-    CAPS_X,  TMOUSE,  NGUI,    LTH2,    LTH1,    L_ENT,   L_ENT,   SPC_X,   G_EQL,   C_DWN,   A_UP,    M_RGHT
+    CAPS_X,  NGUI,    TMOUSE,  LTH2,    LTH1,    L_ENT,   L_BSPC,  SPC_X,   G_EQL,   C_DWN,   A_UP,    M_RGHT
 ),
 
 [_LOWER] = LAYOUT_kc(
@@ -136,7 +137,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______,  _______, _______, KC_ACL2, _______, _______, _______, _______, _______, _______, _______,
  TG(_MOUSE), _______,  _______, _______, KC_ACL1, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, _______,TG(_MOUSE),
     _______, _______,  _______, _______, KC_ACL0, _______, KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R, _______, _______,
-    _______, _______,  _______, _______, KC_BTN3, KC_BTN1, KC_BTN1, KC_BTN2, _______, _______, _______, _______
+    _______, _______,  _______, _______, _______, _______, KC_BTN1, KC_BTN3, KC_BTN2, _______, _______, _______
 )
 
 
