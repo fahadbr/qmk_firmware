@@ -31,8 +31,9 @@
 
 // left side
 #define KC_TMOUSE TG(_MOUSE)
-#define KC_LTH1 LT(_LOWER, KC_MINS)
+#define KC_LTH1 LT(_NUMPAD, KC_MINS)
 #define KC_LTH2 CTL_T(KC_MINS)
+#define KC_L_ENT LT(_LOWER, KC_ENT)
 #define KC_A_M1 M1(KC_A)
 #define KC_S_M2 M2(KC_S)
 #define KC_D_M3 M3(KC_D)
@@ -50,7 +51,7 @@
 
 // right side
 #define KC_NGUI LM(_NUMPAD, MOD_LGUI)
-#define KC_RTH1 LT(_LOWER, KC_EQL)
+#define KC_G_EQL GUI_T(KC_EQL)
 #define KC_G_LEFT GUI_T(KC_LEFT)
 #define KC_C_DWN CTL_T(KC_DOWN)
 #define KC_A_UP ALT_T(KC_UP)
@@ -107,7 +108,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TAB,     Q,       W,       E,       R,       T,       Y,       U,       I,       O,       P,       BSPC,
     ESC_X,   A_M1,    S_M2,    D_M3,    F_M4,    G,       H,       J_M4,    K_M3,    L_M2,    SCLN_M1, QUOT_X,
     LSFT,    Z,       X,       C,       V,       B,       N,       M,       COMM,    DOT,     SLSH,    SFTENT,
-    CAPS_X,  TMOUSE,  NGUI,    LTH2,    LTH1,    SPC_X,   SPC_X,   RTH1,    G_LEFT,  C_DWN,   A_UP,    M_RGHT
+    CAPS_X,  TMOUSE,  NGUI,    LTH2,    LTH1,    L_ENT,   L_ENT,   SPC_X,   G_EQL,   C_DWN,   A_UP,    M_RGHT
 ),
 
 [_LOWER] = LAYOUT_kc(
