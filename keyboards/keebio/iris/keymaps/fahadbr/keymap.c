@@ -62,9 +62,10 @@ enum tap_dances {
   CAPS = 0,
 };
 
-qk_tap_dance_action_t tap_dance_actions[] = {
-  [CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_QUOT, KC_CAPS),
-};
+// Commented because i have disabled tap dancing
+// qk_tap_dance_action_t tap_dance_actions[] = {
+//   [CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_QUOT, KC_CAPS),
+// };
 
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
@@ -191,7 +192,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //   return true;
 // }
 
-uint16_t get_tapping_term(uint16_t keycode) {
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     default:
       return TAPPING_TERM_CUSTOM;
