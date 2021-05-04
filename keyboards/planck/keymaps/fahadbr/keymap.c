@@ -21,7 +21,8 @@
 #define _LOWER 1
 #define _RAISE 2
 #define _NUMPAD 3
-#define _MOUSE 4
+#define _FUNCTION 4
+#define _MOUSE 5
 
 // mod definitions
 #define M1 SFT_T
@@ -56,7 +57,7 @@
 #define KC_G_LEFT GUI_T(KC_LEFT)
 #define KC_C_DWN CTL_T(KC_DOWN)
 #define KC_A_UP ALT_T(KC_UP)
-#define KC_M_RGHT LT(_MOUSE, KC_RGHT)
+#define KC_F_RGHT LT(_FUNCTION, KC_RGHT)
 #define KC_J_M4 M4(KC_J)
 #define KC_K_M3 M3(KC_K)
 #define KC_L_M2 M2(KC_L)
@@ -109,7 +110,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TAB,     Q,       W,       E,       R,       T,       Y,       U,       I,       O,       P,       BSPC,
     ESC_X,   A_M1,    S_M2,    D_M3,    F_M4,    G,       H,       J_M4,    K_M3,    L_M2,    SCLN_M1, QUOT_X,
     LSFT,    Z,       X,       C,       V,       B,       N,       M,       COMM,    DOT,     SLSH,    SFTENT,
-    CAPS_X,  NGUI,    TMOUSE,  LTH2,    LTH1,    L_ENT,   L_BSPC,  SPC_X,   G_EQL,   C_DWN,   A_UP,    M_RGHT
+    CAPS_X,  NGUI,    TMOUSE,  LTH2,    LTH1,    L_ENT,   L_BSPC,  SPC_X,   G_EQL,   C_DWN,   A_UP,    F_RGHT
 ),
 
 [_LOWER] = LAYOUT_kc(
@@ -127,10 +128,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_NUMPAD] = LAYOUT_kc(
-    _______, _______, 7,       8,       9,       _______, _______, F1,      F2,      F3,      _______, _______,
-    _______, 0_M1,    4_M2,    5_M3,    6_M4,    _______, _______, F4_M4,   F5_M3,   F6_M2,   _______, _______,
-    _______, _______, 1,       2,       3,       _______, _______, F5,      F8,      F9,      _______, _______,
-    _______, _______, _______, _______, 0,       _______, _______, F10,     F11,     F12,     _______, _______
+    _______, _______, 7,       8,       9,       _______, _______, _______, _______, _______, _______, _______,
+    _______, 0_M1,    4_M2,    5_M3,    6_M4,    _______, _______, _______, _______, _______, _______, _______,
+    _______, _______, 1,       2,       3,       _______, _______, _______, _______, _______, _______, _______,
+    _______, _______, _______, _______, 0,       _______, _______, _______, _______, _______, _______, _______
+),
+
+[_FUNCTION] = LAYOUT_kc(
+    _______, F1,      F2,      F3,      F4,      F5,      F6,      F7,      F8,      F9,      F10,     F11,
+    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, F12,
+    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
 ),
 
 [_MOUSE] = LAYOUT_planck_grid(
