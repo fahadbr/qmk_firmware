@@ -29,6 +29,7 @@
 #define M2 ALT_T
 #define M3 GUI_T
 #define M4 CTL_T
+#define M5 LCAG_T
 
 // left side
 #define KC_TMOUSE TG(_MOUSE)
@@ -40,6 +41,7 @@
 #define KC_S_M2 M2(KC_S)
 #define KC_D_M3 M3(KC_D)
 #define KC_F_M4 M4(KC_F)
+#define KC_G_M5 M5(KC_G)
 #define KC_0_M1 M1(KC_0)
 #define KC_4_M2 M2(KC_4)
 #define KC_5_M3 M3(KC_5)
@@ -58,10 +60,12 @@
 #define KC_C_DWN CTL_T(KC_DOWN)
 #define KC_A_UP ALT_T(KC_UP)
 #define KC_F_RGHT LT(_FUNCTION, KC_RGHT)
+#define KC_H_M5 M5(KC_H)
 #define KC_J_M4 M4(KC_J)
 #define KC_K_M3 M3(KC_K)
 #define KC_L_M2 M2(KC_L)
 #define KC_SCLN_M1 M1(KC_SCLN)
+#define KC_LEFT_M5 M5(KC_LEFT)
 #define KC_DOWN_M4 M4(KC_DOWN)
 #define KC_UP_M3 M3(KC_UP)
 #define KC_RGHT_M2 M2(KC_RGHT)
@@ -108,14 +112,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_QWERTY] = LAYOUT_kc(
     TAB,     Q,       W,       E,       R,       T,       Y,       U,       I,       O,       P,       BSPC,
-    ESC_X,   A_M1,    S_M2,    D_M3,    F_M4,    G,       H,       J_M4,    K_M3,    L_M2,    SCLN_M1, QUOT_X,
+    ESC_X,   A_M1,    S_M2,    D_M3,    F_M4,    G_M5,    H_M5,    J_M4,    K_M3,    L_M2,    SCLN_M1, QUOT_X,
     LSFT,    Z,       X,       C,       V,       B,       N,       M,       COMM,    DOT,     SLSH,    SFTENT,
     CAPS_X,  NGUI,    TMOUSE,  LTH2,    LTH1,    L_ENT,   L_BSPC,  SPC_X,   G_EQL,   C_DWN,   A_UP,    F_RGHT
 ),
 
 [_LOWER] = LAYOUT_kc(
     INS,     EXLM,    AT,      HASH,    DLR,     PERC,    CIRC,    AMPR,    ASTR,    LPRN,    RPRN,    DEL,
-    BSPC,    _______, _______, LBRC_M3, RBRC_M4, GRV,     LEFT,    DOWN_M4, UP_M3,   RGHT_M2, PIPE,    F12,
+    BSPC,    _______, _______, LBRC_M3, RBRC_M4, GRV,     LEFT_M5, DOWN_M4, UP_M3,   RGHT_M2, PIPE,    F12,
     PSCR,    LBRC,    RBRC,    LCBR,    RCBR,    TILD,    HOME,    PGDN,    PGUP,    END,     BSLS,    _______,
     _______, _______, _______, _______, _______, _______, _______, PLUS,    TILD,    _______, _______, _______
 ),
