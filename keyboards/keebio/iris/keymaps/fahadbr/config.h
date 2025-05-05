@@ -35,7 +35,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM_CUSTOM 150
 #define TAPPING_TERM_PER_KEY
 #define PERMISSIVE_HOLD
-#define IGNORE_MOD_TAP_INTERRUPT
 // #define TAPPING_FORCE_HOLD
 // #define RETRO_TAPPING
 
@@ -46,10 +45,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_MAX_SPEED 7
 #define MOUSEKEY_WHEEL_DELAY 0
 
-#undef RGBLED_NUM
+#undef RGBLIGHT_LED_COUNT
 #undef RGBLED_SPLIT
 #define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 12
+#define RGBLIGHT_LED_COUNT 12
 #define RGBLIGHT_HUE_STEP 10
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
